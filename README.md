@@ -8,7 +8,7 @@ You can try with the usual
 - migrate
 - php artisan serve 
 
-The chat is in the / path
+The chat is in the "/" path
 You can set your username and send your text. 
 For testing purposes on reload it only load msgs that are at max 2min old, but they remain visible on screen if you don't reload again (this is on purpose)
 
