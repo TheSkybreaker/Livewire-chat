@@ -45,9 +45,6 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
-        ],
-        "vercel": [
-            "composer clear-cache"
         ]
     },
     "extra": {
