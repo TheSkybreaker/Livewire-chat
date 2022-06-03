@@ -16,7 +16,7 @@ class Counter extends Component
         $this->posts = Post::where(
             'created_at',
             '>',
-            Carbon::now()->subMinutes(2)
+            Carbon::now()->subMinutes(60)
         )->get();
 
         $this->startTime = Carbon::now();
