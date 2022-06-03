@@ -11,7 +11,7 @@
         @endforeach
     </div>
 
-    <div wire:poll.3s>
+    <div wire:poll.250ms>
         @foreach ($latest as $post)
         
         <hr>

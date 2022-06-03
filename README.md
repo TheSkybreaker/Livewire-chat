@@ -14,4 +14,4 @@ For testing purposes on reload it only load msgs that are at max 60min old, but 
 
 Old-loaded msgs have 1 hr, new msgs have 2 hr
 
-Added vercel deployment: [Click me!](https://livechat-theskybreaker.vercel.app/)
+Added vercel deployment: [Click me!](https://livechat-delta.vercel.app)
