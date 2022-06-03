@@ -47,7 +47,7 @@
             "@php artisan key:generate --ansi"
         ],
         "vercel": [
-            "@php -r 'opcache_reset();'"
+            "composer clear-cache"
         ]
     },
     "extra": {
