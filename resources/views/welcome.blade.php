@@ -21,7 +21,7 @@
 </head>
 <body>
     <div class="flex justify-center items-center h-screen">
-        <div class="border-2 border-black rounded p-4 w-96">
+        <div class="border-2 border-black rounded p-4 w-full md:w-96 h-full md:h-auto">
             <livewire:counter />
             <livewire:input-posts />
         </div>

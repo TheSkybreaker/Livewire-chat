@@ -1,4 +1,4 @@
-<div class="overflow-auto h-60">
+<div class="overflow-auto h-auto md:h-60">
     {{-- A good traveler has no fixed plans and is not intent upon arriving. --}}
     <div wire:ignore>
         @foreach ($posts as $post)
