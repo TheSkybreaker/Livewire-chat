@@ -10,7 +10,14 @@ class InputPosts extends Component
     public $newPost;
     public $sender;
 
+    protected $rules = [
+        'sender' => 'required',
+        'newPost' => 'required',
+    ];
+
     public function storePost() {
+        $this->validate();
+        
         Post::create([
             'content'=>$this->newPost,
             'sender'=>$this->sender
