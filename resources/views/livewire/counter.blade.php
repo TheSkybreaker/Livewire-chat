@@ -3,7 +3,7 @@
     <div wire:ignore>
         @foreach ($posts as $post)
     
-            Posted at: {{ $post->created_at->format('M/d h:m') }} <br>
+            Posted at: {{ $post->created_at->format('M/d h:i') }} <br>
             by: {{ $post->sender }} <br>
             {{ $post->content }} <br>
             <hr>
