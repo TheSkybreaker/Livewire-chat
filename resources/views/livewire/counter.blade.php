@@ -14,7 +14,7 @@
     <div wire:poll.250ms>
         @foreach ($latest as $post)
         
-        Postet at: {{ $post->created_at->format('M/d h:m') }} <br>
+        Posted at: {{ $post->created_at->format('M/d h:m') }} <br>
         by: {{ $post->sender }} <br>
         {{ $post->content }} <br>
         <hr>
