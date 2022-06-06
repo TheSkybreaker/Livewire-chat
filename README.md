@@ -12,6 +12,7 @@ The chat is in the "/" path
 You can set your username and send your text. 
 For testing purposes on reload it only load msgs that are at max 60min old, but they remain visible on screen if you don't reload again (this is on purpose)
 
-Old-loaded msgs have 1 hr, new msgs have 2 hr
+Now the chat is good-looking!
+It also scroll down on new msgs!
 
 Added vercel deployment: [Click me!](https://livechat-delta.vercel.app)
