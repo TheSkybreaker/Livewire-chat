@@ -10,6 +10,10 @@
                 <hr>
                 
             @endforeach
+
+            <script>
+                let scrollHeight = document.getElementById("chat").scrollHeight;
+            </script>
         </div>
     
         <div wire:poll.250ms>
@@ -21,13 +25,15 @@
             <hr>
             
             @endforeach
-        </div>
 
-        @if($scrollDown)
-        <script>
-            document.getElementById("chat").scrollTop = document.getElementById("chat").scrollHeight;
-        </script>
-        @endif
+            <script>
+                let newScrollHeight = document.getElementById("chat").scrollHeight;
+                if(scrollHeight!=newScrollHeight) {
+                    document.getElementById("chat").scrollTop = newScrollHeight;
+                    scrollHeight = newScrollHeight;
+                }
+            </script>
+        </div>
     </div>
 
     <div class="mt-5 relative" wire:ignore>

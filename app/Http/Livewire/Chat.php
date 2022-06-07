@@ -13,13 +13,12 @@ class Chat extends Component
     public $startTime;
     public $newPost;
     public $sender;
-    public $scrollDown = false;
 
     public function mount() {
         $this->posts = Post::where(
             'created_at',
             '>',
-            Carbon::now()->subMinutes(60)
+            Carbon::now()->subMinutes(2)
         )->get();
 
         $this->startTime = Carbon::now();
@@ -53,15 +52,8 @@ class Chat extends Component
 
         return view('livewire.chat', [
             'posts'=> $this->posts,
-            'latest'=>$latestPost,
-            'scrollDown'=>$this->scrollDown
+            'latest'=>$latestPost
         ]);
 
-    }
-
-    public function dehydrate() {
-
-        $this->scrollDown=false;
-            
     }
 }
